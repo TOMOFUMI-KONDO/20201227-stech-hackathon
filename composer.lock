@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56abc574c9c50fc6e4b7f5ef2a76cd50",
+    "content-hash": "ed07281200d4b7464a1dd5578d66d063",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4505,6 +4505,80 @@
             "time": "2020-09-14T15:57:31+00:00"
         },
         {
+            "name": "vluzrmos/slack-api",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vluzrmos/laravel-slack-api.git",
+                "reference": "d80025419fee7d748bf2a853008ad80cbe14bbf3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vluzrmos/laravel-slack-api/zipball/d80025419fee7d748bf2a853008ad80cbe14bbf3",
+                "reference": "d80025419fee7d748bf2a853008ad80cbe14bbf3",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~5.3 || ~6.0 || ~7.0",
+                "illuminate/cache": "~6.0 || ~7.0 || ~8.0",
+                "illuminate/support": "~6.0 || ~7.0 || ~8.0",
+                "nesbot/carbon": "1.* || 2.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Vluzrmos\\SlackApi\\SlackApiServiceProvider"
+                    ],
+                    "aliases": {
+                        "SlackApi": "Vluzrmos\\SlackApi\\Facades\\SlackApi",
+                        "SlackChannel": "Vluzrmos\\SlackApi\\Facades\\SlackChannel",
+                        "SlackChat": "Vluzrmos\\SlackApi\\Facades\\SlackChat",
+                        "SlackFile": "Vluzrmos\\SlackApi\\Facades\\SlackFile",
+                        "SlackGroup": "Vluzrmos\\SlackApi\\Facades\\SlackGroup",
+                        "SlackInstantMessage": "Vluzrmos\\SlackApi\\Facades\\SlackInstantMessage",
+                        "SlackOAuth": "Vluzrmos\\SlackApi\\Facades\\SlackOAuth",
+                        "SlackOAuthV2": "Vluzrmos\\SlackApi\\Facades\\SlackOAuthV2",
+                        "SlackRealTimeMessage": "Vluzrmos\\SlackApi\\Facades\\SlackRealTimeMessage",
+                        "SlackSearch": "Vluzrmos\\SlackApi\\Facades\\SlackSearch",
+                        "SlackStar": "Vluzrmos\\SlackApi\\Facades\\SlackStar",
+                        "SlackTeam": "Vluzrmos\\SlackApi\\Facades\\SlackTeam",
+                        "SlackUser": "Vluzrmos\\SlackApi\\Facades\\SlackUser",
+                        "SlackUserAdmin": "Vluzrmos\\SlackApi\\Facades\\SlackUserAdmin"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vluzrmos\\": "src/Vluzrmos/"
+                },
+                "files": [
+                    "src/Vluzrmos/SlackApi/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vagner do Carmo",
+                    "email": "vluzrmos@gmail.com"
+                }
+            ],
+            "description": "Wrapper for Slack.com WEB API.",
+            "keywords": [
+                "laravel",
+                "lumen",
+                "slack"
+            ],
+            "support": {
+                "issues": "https://github.com/vluzrmos/laravel-slack-api/issues",
+                "source": "https://github.com/vluzrmos/laravel-slack-api/tree/v0.5.0"
+            },
+            "time": "2020-11-19T15:15:29+00:00"
+        },
+        {
             "name": "voku/portable-ascii",
             "version": "1.5.6",
             "source": {
@@ -6953,5 +7027,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
